@@ -15,9 +15,9 @@ let age = 18
 
 function ageCheck(age) {
     if (age >= 18) {
-        console.log('Eres mayor de edad')
+        console.log('Eres mayor de edad');
     } else {
-        console.log('No eres aún mayor de edad')
+        console.log('No eres aún mayor de edad');
     }
 }
 
@@ -119,16 +119,16 @@ for (i in programmers) {
     let programmer = programmers[i] 
     output = `${i}` +": " + `${programmer.name}` + " " + `${programmer.lastname}` + ", su aporte fue " + `${programmer.knowledge}`
 
-    console.log(output)
+    console.log(output);
 }
 
 //Ejercicio 11: Con un bucle for of imprime en consola "Hola, mi nombre es ... " y reemplaza los tres puntos con cada nombre del array dado.
 
-const names = ['Rocío', 'Lola', 'Antía', 'Laura', 'Noelia']
+const names = ['Rocío', 'Lola', 'Antía', 'Laura', 'Noelia'];
 
 //Escribe tu código aquí
 for (const i of names) {
-    console.log('Hola, mi nombre es ' + i)
+    console.log('Hola, mi nombre es ' + i);
 }
 
 //Ejercicio 12: Con un bucle while imprime en consola una lista del 1 al 5.
@@ -136,10 +136,10 @@ for (const i of names) {
 //Escribe tu código aquí
 
 let z = 0
-// while (z< 5) {
-//     z ++
-//     console.log('while loop ' + z)
-// }
+while (z< 5) {
+    z ++;
+    console.log('while loop ' + z);
+}
 
 //Ejercicio 13: Realiza el mismo ejercicio anterior pero con un bucle do while.
 
@@ -148,4 +148,30 @@ console.log("do while:")
 do {
     z ++;
     console.log(z);
-} while (z<5) 
+} while (z<5);
+
+//Ejercicio 14: Saludo Personalizado
+//Crea una función llamada saludar que tome un parámetro llamado nombre y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
+
+//Escribe tu código aquí
+function saludar(nombre) {
+    return ("Hola, " + nombre);
+}
+console.log(saludar("Galina"));
+console.log(saludar("Aita"));
+console.log(saludar("Anna"));
+console.log(saludar("Mark"));
+
+//Ejercicio 15: Calcular el Área de un Rectángulo
+//Crea una función llamada calcularAreaRectangulo que tome dos parámetros (ancho y alto) y devuelva el área del rectángulo. Luego, llama a la función con diferentes valores de ancho y alto y muestra el resultado en la consola.
+
+//Escribe tu código aquí
+function calcularAreaRectangulo(width, height) {
+    return width*height;
+}
+
+console.log(calcularAreaRectangulo(10,5));
+console.log(calcularAreaRectangulo(5,7));
+console.log(calcularAreaRectangulo(2,2));
+console.log(calcularAreaRectangulo(1,4));
+console.log(calcularAreaRectangulo(2,3));
